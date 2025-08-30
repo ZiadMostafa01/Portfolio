@@ -140,6 +140,7 @@ function Hero() {
         <div className="flex gap-4 justify-center text-white">
           <a
             href="https://www.facebook.com/ziad.mostafa.5245961"
+            target="_blank"
             className="p-3 rounded-full backdrop-blur-lg border border-blue-500/20 bg-gradient-to-tr from-black/60 to-black/40 shadow-lg hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-110 hover:rotate-2 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-blue-500/50 hover:bg-gradient-to-tr hover:from-blue-500/10 hover:to-black/40 group relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
@@ -213,8 +214,7 @@ function Hero() {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="8em"
-          height="8em"
+          className="w-24 sm:w-32"
           viewBox="0 0 512 512"
         >
           <path
