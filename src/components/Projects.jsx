@@ -92,14 +92,14 @@ function Projects() {
                     href="#Home"
                     className="space-x-2 hover:text-cyan-600 transition duration-300"
                   >
-                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <i className="fa-solid fa-up-right-from-square"></i>
                     <span className="text-lg font-bold">Live Project</span>
                   </a>
                   <a
                     href=""
                     className="text-3xl  hover:text-cyan-600 transition duration-300"
                   >
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                   </a>
                 </div>
               </div>
@@ -143,14 +143,14 @@ function Projects() {
                     target="_blank"
                     className="space-x-2 hover:text-cyan-600 transition duration-300"
                   >
-                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <i className="fa-solid fa-up-right-from-square"></i>
                     <span className="text-lg font-bold">Live Project</span>
                   </a>
                   <a
                     href=""
                     className="text-3xl hover:text-cyan-600 transition duration-300"
                   >
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                   </a>
                 </div>
               </div>

@@ -22,7 +22,7 @@ function App() {
         href="#Home"
         className="fixed bottom-5 right-5 w-10 h-10 shadow-lg flex justify-center items-center rounded-full border border-blue-500/20 text-blue-500"
       >
-        <i class="fas fa-arrow-up"></i>
+        <i className="fas fa-arrow-up"></i>
       </a>
     </>
   );

@@ -60,7 +60,7 @@ function Contact() {
                 <div className="flex space-y-3 space-x-5 flex-wrap justify-between">
                   <div className="flex items-center gap-3">
                     <div className="flex justify-center items-center text-center bg-gray-300 w-10 h-10 rounded-full">
-                      <i class="fas fa-map-marker-alt text-blue-600"></i>
+                      <i className="fas fa-map-marker-alt text-blue-600"></i>
                     </div>
                     <div>
                       <div className="font-bold">Location</div>
@@ -69,7 +69,7 @@ function Contact() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="flex justify-center items-center text-center bg-gray-300 w-10 h-10 rounded-full">
-                      <i class="fas fa-envelope text-blue-600"></i>
+                      <i className="fas fa-envelope text-blue-600"></i>
                     </div>
                     <div>
                       <div className="font-bold">Email</div>
@@ -83,7 +83,7 @@ function Contact() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="flex justify-center items-center text-center bg-gray-300 w-10 h-10 rounded-full">
-                      <i class="fas fa-phone text-blue-600"></i>
+                      <i className="fas fa-phone text-blue-600"></i>
                     </div>
                     <div>
                       <div className="font-bold">Phone</div>
@@ -173,7 +173,7 @@ function Contact() {
                     disabled={state.submitting}
                     className="bg-[rgb(39,96,143)] hover:bg-[rgb(32,80,119)] cursor-pointer hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 w-full"
                   >
-                    <i class="fas fa-paper-plane mr-2"></i>
+                    <i className="fas fa-paper-plane mr-2"></i>
                     {state.submitting ? "submitting" : "Send Message"}
                   </button>
                 </form>
