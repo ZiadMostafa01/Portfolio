@@ -146,7 +146,7 @@ function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
             <div className="relative z-10">
               <svg
-                className="w-5 h-5 fill-current text-blue-500 group-hover:text-blue-400 transition-colors duration-300"
+                className="w-5 h-5 fill-current text-gray-300 group-hover:text-blue-400 transition-colors duration-300"
                 viewBox="0 0 320 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -194,16 +194,19 @@ function Hero() {
 
             {/* أيقونة LinkedIn */}
             <div className="relative z-10">
-              <svg
-                className="w-5 h-5 fill-current text-blue-500 group-hover:text-blue-400 transition-colors duration-300"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M20.45 20.45h-3.55v-5.4c0-1.29-.03-2.96-1.81-2.96-1.81 0-2.09 1.41-2.09 2.87v5.49H9.45V9h3.41v1.56h.05c.47-.89 1.61-1.81 3.31-1.81 3.54 0 4.19 2.33 4.19 5.36v6.34zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.11 20.45H3.56V9h3.55v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"
-                />
-              </svg>
+   <svg
+  className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors duration-300"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 448 512"
+  fill="currentColor"
+>
+  <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.09 108 0 83.5 0 53.8 
+  0 24.6 24.09 0 53.84 0c29.7 0 53.78 24.6 53.78 53.8 0 
+  29.7-24.08 54.2-53.78 54.2zM447.9 448h-92.4V304.1c0-34.3-.7-78.3-47.7-78.3-47.7 
+  0-55 37.2-55 75.6V448h-92.4V148.9h88.6v40.8h1.3c12.3-23.2 
+  42.4-47.7 87.2-47.7 93.3 0 110.5 61.4 110.5 141.3V448z"/>
+</svg>
+
             </div>
           </a>
         </div>

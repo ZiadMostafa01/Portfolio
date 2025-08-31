@@ -13,20 +13,17 @@ function App() {
   const [showScrollBtn, setshowScrollBtn] = useState(false);
   return (
     <>
-      {/* <Navbar /> */}
       <Hero />
       <About />
       <Projects />
       <Contact />
-
-        <a
-          href="#Home"
-          style={{opacity: showScrollBtn ? 1 : 0}}
-          className="fixed bottom-5 right-5 w-10 h-10 shadow-lg flex justify-center items-center rounded-full transition duration-700 border border-blue-500/20 text-blue-500"
-        >
-          <i className="fas fa-arrow-up"></i>
-        </a>
-   
+      <a
+        href="#Home"
+        style={{ opacity: showScrollBtn ? 1 : 0 }}
+        className="fixed bottom-5 right-5 w-10 h-10 shadow-lg flex justify-center items-center rounded-full transition duration-700 border border-blue-500/20 text-blue-500"
+      >
+        <i className="fas fa-arrow-up"></i>
+      </a>
     </>
   );
 }
