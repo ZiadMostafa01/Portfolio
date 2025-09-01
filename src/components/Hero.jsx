@@ -2,7 +2,7 @@ import StarfieldBackground from "./Particles";
 import { Typewriter } from "react-simple-typewriter";
 import Lottie from "lottie-react";
 import heroAnimation2 from "../assets/animations/space boy developer.json";
-
+import CV from "../assets/files/ZiadMostafaCV.pdf";
 function Hero() {
   return (
     <div
@@ -115,7 +115,7 @@ function Hero() {
           </div>
           <div className="mb-6">
             <a
-              href="/Portfolio/files/ZiadMostafaCV.pdf"
+              href={CV}
               download
               className="flex group relative rounded-full  p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100 hover:shadow-glow"
             >

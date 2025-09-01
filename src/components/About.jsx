@@ -67,7 +67,7 @@ function About() {
           </div>
           <div
             data-aos="fade-up"
-            className="w-72 md:-translate-y-10  xl:-translate-10 mx-auto md:mx-0"
+            className="w-72 md:-translate-y-10 xl:-translate-10 mx-auto md:mx-0"
           >
             <img src={personalPhoto} alt="" />
           </div>
