@@ -7,9 +7,37 @@ const checkTools = {
 };
 const tools = "bg-zinc-600 text-center rounded-full px-3";
 
+const myProjects = [
+  {
+    imgPath: cardImage2,
+    projectTitle: "Portfolio",
+    description:
+      "A modern, fully responsive portfolio highlighting my latest web development work, designed to deliver a smooth and immersive experience across all devices.",
+    state: checkTools.completed,
+    stateName: "Completed",
+    skills: ["React.js", "Tailwind CSS 4.1", "JavaScript", "CSS 3"],
+    link: "#Home",
+    github: "https://github.com/ZiadMostafa01/Portfolio",
+  },
+  {
+    imgPath: cardImage,
+    projectTitle: "Educational Platform",
+    description:
+      "A modern, responsive educational platform designed for a seamless learning experience across all devices.",
+    state: checkTools.underDevelop,
+    stateName: "Under Develop",
+    skills: ["Tailwind CSS 3.3.5", "JavaScript", "CSS 3"],
+    link: "https://ziadmostafa.netlify.app/",
+    github: "",
+  },
+];
+
 function Projects() {
   return (
-    <section id="Projects" className="bg-[var(--bg-primary-dark)] text-[var(--text-main-dark)]">
+    <section
+      id="Projects"
+      className="bg-[var(--bg-primary-dark)] text-[var(--text-main-dark)]"
+    >
       <div className="py-20 space-y-24">
         <div
           data-aos="fade-up"
@@ -52,110 +80,55 @@ function Projects() {
         </div>
 
         <div className="relative z-0 px-2 flex flex-wrap justify-center items-start gap-10">
-          {/* Card 1 */}
-          <div data-aos="zoom-in" className="bg-[var(--bg-card-dark)] border border-zinc-700 rounded-lg w-[460px]">
-            <div className="hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
-              <img src={cardImage2} className="rounded-t-lg " alt="" />
-              <div className="px-7 py-6">
-                <div className="mb-5">
-                  <h1 className="font-bold">Project 1</h1>
-                  <p>
-                    A modern, fully responsive portfolio highlighting my latest
-                    web development work, designed to deliver a smooth and
-                    immersive experience across all devices.
-                  </p>
-                </div>
+          {myProjects.map((item) => {
+            return (
+              <div
+                key={item.projectTitle}
+                data-aos="zoom-in"
+                className="bg-[var(--bg-card-dark)] border border-zinc-700 rounded-lg w-[460px]"
+              >
+                <div className="hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
+                  <img src={item.imgPath} className="rounded-t-lg" alt="" />
+                  <div className="px-7 py-6">
+                    <div className="mb-5">
+                      <h1 className="font-bold">{item.projectTitle}</h1>
+                      <p>{item.description}</p>
+                    </div>
 
-                <div className="space-y-5 mb-6">
-                  <div className={checkTools.completed}>
-                    <span>Completed</span>
+                    <div className="space-y-5 mb-6">
+                      <div className={item.state}>
+                        <span>{item.stateName}</span>
+                      </div>
+                      <ul className="flex gap-3 flex-wrap ">
+                        {item.skills.map((skill, index) => (
+                          <li key={index} className={tools}>
+                            <span>{skill}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="bg-zinc-700 h-[1px] mb-3"></div>
+
+                    <div className="flex justify-between">
+                      <a
+                        href={item.link}
+                        className="space-x-2 hover:text-cyan-600 transition duration-300"
+                      >
+                        <i className="fa-solid fa-up-right-from-square"></i>
+                        <span className="text-lg font-bold">Live Project</span>
+                      </a>
+                      <a
+                        href={item.github}
+                        className="text-3xl  hover:text-cyan-600 transition duration-300"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </div>
                   </div>
-                  <ul className="flex gap-3 flex-wrap ">
-                    <li className={tools}>
-                      <span>React.js</span>
-                    </li>
-                    <li className={tools}>
-                      <span>Tailwind CSS 3.3.5</span>
-                    </li>
-                    <li className={tools}>
-                      <span>JavaScript</span>
-                    </li>
-                    <li className={tools}>
-                      <span>CSS 3</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="bg-zinc-700 h-[1px] mb-3"></div>
-
-                <div className="flex justify-between">
-                  <a
-                    href="#Home"
-                    className="space-x-2 hover:text-cyan-600 transition duration-300"
-                  >
-                    <i className="fa-solid fa-up-right-from-square"></i>
-                    <span className="text-lg font-bold">Live Project</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-3xl  hover:text-cyan-600 transition duration-300"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div data-aos="zoom-in" className="bg-[var(--bg-card-dark)] w-[460px] border border-zinc-700 rounded-lg">
-            <div className="hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
-              <img src={cardImage} className="rounded-t-lg" alt="" />
-              <div className="px-7 py-6">
-                <div className="mb-5">
-                  <h1 className="font-bold">Project 2</h1>
-                  <p>
-                    A modern, responsive educational platform designed for a
-                    seamless learning experience across all devices.
-                  </p>
-                </div>
-
-                <div className="space-y-5 mb-6">
-                  <div className={checkTools.underDevelop}>
-                    <span>Under Develop</span>
-                  </div>
-                  <ul className="flex gap-3 flex-wrap ">
-                    <li className={tools}>
-                      <span>Tailwind CSS 3.3.5</span>
-                    </li>
-                    <li className={tools}>
-                      <span>JavaScript</span>
-                    </li>
-                    <li className={tools}>
-                      <span>CSS 3</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="bg-zinc-700 h-[1px] mb-3"></div>
-
-                <div className="flex justify-between">
-                  <a
-                    href="https://ziadmostafa.netlify.app/"
-                    target="_blank"
-                    className="space-x-2 hover:text-cyan-600 transition duration-300"
-                  >
-                    <i className="fa-solid fa-up-right-from-square"></i>
-                    <span className="text-lg font-bold">Live Project</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-3xl hover:text-cyan-600 transition duration-300"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

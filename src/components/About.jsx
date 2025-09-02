@@ -1,9 +1,29 @@
 import personalPhoto from "../assets/images/personalphoto.png";
 import BrandSlider from "./Marquee";
 
+const mySkills = [
+  "React.js",
+  "JavaScript",
+  "Tailwind",
+  "Bootstrap",
+  "HTML",
+  "CSS",
+  "C++",
+  "VS Code",
+  "Git",
+  "GitHub",
+  "Adobe Photoshop",
+  "Microsoft Office",
+  "Google Drive",
+  "Problem Solving",
+  "AI Tools",
+];
 function About() {
   return (
-    <section id="About" className="bg-[var(--bg-primary-dark)] text-[var(--text-main-dark)] py-10">
+    <section
+      id="About"
+      className="bg-[var(--bg-primary-dark)] text-[var(--text-main-dark)] py-10"
+    >
       <div
         data-aos="fade-up"
         className="relative mx-auto mt-16 max-w-full pt-10 lg:px-8"
@@ -82,7 +102,6 @@ function About() {
               <h2 className="font-bold text-2xl">Experience</h2>
 
               <div className="relative border-l-2 border-gray-300 pl-6">
-                {/* Item 1 */}
                 <div className="mb-10">
                   <div className="absolute -left-[11px] w-5 h-5 rounded-full bg-indigo-600 border-2 border-white"></div>
                   <h3 className="text-xl font-semibold">
@@ -95,7 +114,6 @@ function About() {
                   </p>
                 </div>
 
-                {/* Item 3 */}
                 <div>
                   <div className="absolute -left-[11px] w-5 h-5 rounded-full bg-indigo-600 border-2 border-white"></div>
                   <h3 className="text-xl font-semibold">Personal Projects</h3>
@@ -122,51 +140,14 @@ function About() {
             <div className="bg-[var(--bg-card-dark)] border space-y-2  border-zinc-700 py-5 px-10 xl:w-[450px] rounded-2xl  hover:border-cyan-500 hover:-translate-y-2 transition duration-300 hover:shadow-[0_0_40px_rgba(34,211,238,0.9)]">
               <h2 className="font-bold text-2xl">Skills</h2>
               <div className="flex flex-wrap gap-2">
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  React.Js
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  JavaScript{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Tailwind{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Bootstrap{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  HTML{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  CSS{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  C++{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  VS Code{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Git{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  GitHub{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Adobe Photoshop{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Microsoft Office{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Google Drive{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  Problem Solving{" "}
-                </div>
-                <div className="border border-zinc-700  px-2 rounded-md">
-                  AI Tools{" "}
-                </div>
+                {mySkills.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="border border-zinc-700  px-2 rounded-md"
+                  >
+                    {skill}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
