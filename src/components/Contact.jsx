@@ -107,7 +107,7 @@ function Contact() {
                   </div>
                 )}
 
-                <form onSubmit={handleSubmit} action="" className="space-y-2">
+                <form onSubmit={handleSubmit} className="space-y-2">
                   <div>
                     <label
                       htmlFor="name"

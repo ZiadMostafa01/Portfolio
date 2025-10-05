@@ -1,5 +1,6 @@
 import cardImage from "../assets/images/cardImage.png";
 import cardImage2 from "../assets/images/cardImage2.png";
+import cardImage3 from "../assets/images/cardImage3.png";
 
 const checkTools = {
   completed: "bg-green-500 rounded-full text-center font-semibold w-fit px-3",
@@ -9,8 +10,19 @@ const tools = "bg-zinc-600 text-center rounded-full px-3";
 
 const myProjects = [
   {
+    imgPath: cardImage3,
+    projectTitle: "Taha Fawzi – Personal Portfolio Website",
+    description:
+      "A fully responsive and dynamic portfolio website I developed for a client, featuring dark/light mode, multi-language support, and a clean, modular code structure.",
+    state: checkTools.completed,
+    stateName: "Completed",
+    skills: ["React.js", "Tailwind CSS 4.1", "Vite", "JavaScript", "CSS 3"],
+    link: "https://ziadmostafa01.github.io/Taha-Portfolio/",
+    github: "https://github.com/ZiadMostafa01/Taha-Portfolio",
+  },
+  {
     imgPath: cardImage2,
-    projectTitle: "Portfolio",
+    projectTitle: "My Portfolio",
     description:
       "A modern, fully responsive portfolio highlighting my latest web development work, designed to deliver a smooth and immersive experience across all devices.",
     state: checkTools.completed,
@@ -85,7 +97,7 @@ function Projects() {
               <div
                 key={item.projectTitle}
                 data-aos="zoom-in"
-                className="bg-[var(--bg-card-dark)] border border-zinc-700 rounded-lg w-[460px]"
+                className="bg-[var(--bg-card-dark)] border border-zinc-700 rounded-lg h-[] w-[460px]"
               >
                 <div className="hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
                   <img src={item.imgPath} className="rounded-t-lg" alt="" />

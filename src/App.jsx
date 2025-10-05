@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Certificates from "./components/Certificates";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
   }, []);
   const [showScrollBtn, setshowScrollBtn] = useState(false);
   return (
-    <>
+    <div className="bg-[var(--bg-primary-dark)]">
       <Hero />
       <About />
       <Projects />
+      <Certificates />
       <Contact />
       <a
         href="#Home"
@@ -24,7 +26,7 @@ function App() {
       >
         <i className="fas fa-arrow-up"></i>
       </a>
-    </>
+    </div>
   );
 }
 
