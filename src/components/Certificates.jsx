@@ -22,14 +22,14 @@ function Certificates() {
   const [index, setIndex] = useState(0);
 
   const certificates = [
-    { src: cert1, title: "Enactus Fayoum" },
-    { src: cert2, title: "Enactus Fayoum" },
-    { src: cert3, title: "Enactus Fayoum" },
-    { src: cert4, title: "Enactus Fayoum" },
-    { src: cert5, title: "Enactus Fayoum" },
+    { src: cert1, title: "Database Fundamentals" },
+    { src: cert2, title: "Networking Essentials" },
+    { src: cert3, title: "UX Design Fundamentals" },
+    { src: cert4, title: "Introduction to Data Science" },
+    { src: cert5, title: "Enactus Egypt" },
     { src: cert6, title: "Enactus Fayoum" },
-    { src: cert7, title: "Enactus Fayoum" },
-    { src: cert8, title: "Enactus Fayoum" },
+    { src: cert7, title: "Learn HTML & CSS" },
+    { src: cert8, title: "Masterign OOP using C++" },
   ];
 
   return (
