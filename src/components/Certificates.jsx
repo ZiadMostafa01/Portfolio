@@ -103,7 +103,7 @@ function Certificates() {
             slidesPerView: 1.3, // موبايل صغير جداً
           },
           500: {
-            slidesPerView: 1.7, // من أول تابلت أو موبايل واسع
+            slidesPerView: 2, // من أول تابلت أو موبايل واسع
           },
           1024: {
             slidesPerView: 3, // من أول لابتوب وفوق
