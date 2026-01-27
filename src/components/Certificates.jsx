@@ -1,13 +1,15 @@
 import { useState } from "react";
 
-import cert1 from "../assets/images/certificates/cert1.png";
+import cert1 from "../assets/images/certificates/cert1.jpg";
 import cert2 from "../assets/images/certificates/cert2.png";
 import cert3 from "../assets/images/certificates/cert3.png";
 import cert4 from "../assets/images/certificates/cert4.png";
-import cert5 from "../assets/images/certificates/cert5.jpg";
+import cert5 from "../assets/images/certificates/cert5.png";
 import cert6 from "../assets/images/certificates/cert6.jpg";
-import cert7 from "../assets/images/certificates/cert7.png";
+import cert7 from "../assets/images/certificates/cert7.jpg";
 import cert8 from "../assets/images/certificates/cert8.png";
+import cert9 from "../assets/images/certificates/cert9.png";
+import cert10 from "../assets/images/certificates/cert10.png";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,14 +24,16 @@ function Certificates() {
   const [index, setIndex] = useState(0);
 
   const certificates = [
-    { src: cert1, title: "Database Fundamentals" },
-    { src: cert2, title: "Networking Essentials" },
-    { src: cert3, title: "UX Design Fundamentals" },
-    { src: cert4, title: "Introduction to Data Science" },
-    { src: cert5, title: "Enactus Egypt" },
-    { src: cert6, title: "Enactus Fayoum" },
-    { src: cert7, title: "Learn HTML & CSS" },
-    { src: cert8, title: "Masterign OOP using C++" },
+    { src: cert1, title: "React Frontend Web Developer" },
+    { src: cert2, title: "Database Fundamentals" },
+    { src: cert3, title: "Networking Essentials" },
+    { src: cert4, title: "UX Design Fundamentals" },
+    { src: cert5, title: "Introduction to Data Science" },
+    { src: cert6, title: "Enactus Egypt" },
+    { src: cert7, title: "Enactus Fayoum" },
+    { src: cert8, title: "Learn HTML & CSS" },
+    { src: cert9, title: "Masterign OOP using C++" },
+    { src: cert10, title: "English for IT 1" },
   ];
 
   return (
@@ -99,7 +103,7 @@ function Certificates() {
             slidesPerView: 1.3, // موبايل صغير جداً
           },
           500: {
-            slidesPerView: 2, // من أول تابلت أو موبايل واسع
+            slidesPerView: 1.7, // من أول تابلت أو موبايل واسع
           },
           1024: {
             slidesPerView: 3, // من أول لابتوب وفوق
