@@ -40,7 +40,7 @@ const myProjects = [
     stateName: "Under Develop",
     skills: ["Tailwind CSS 3.3.5", "JavaScript", "CSS 3"],
     link: "https://ziadmostafa01.github.io/educational-platform/",
-    github: "",
+    github: "https://github.com/ZiadMostafa01/educational-platform",
   },
 ];
 
