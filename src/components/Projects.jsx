@@ -114,7 +114,7 @@ function Projects() {
             return (
               <div
                 key={item.projectTitle}
-                // data-aos="zoom-in"
+                data-aos="zoom-in"
                 className="bg-[var(--bg-card-dark)] border hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] border-zinc-700 rounded-lg h-[] w-[460px]"
               >
                 <div>
