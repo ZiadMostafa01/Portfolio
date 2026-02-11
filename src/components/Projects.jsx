@@ -112,48 +112,51 @@ function Projects() {
         <div className="relative z-0 px-2 flex flex-wrap justify-center items-start gap-10">
           {myProjects.map((item) => {
             return (
-              <div
-                key={item.projectTitle}
-                data-aos="zoom-in"
-                className="bg-[var(--bg-card-dark)] border hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] border-zinc-700 rounded-lg h-[] w-[460px]"
-              >
-                <div>
-                  <img src={item.imgPath} className="rounded-t-lg" alt="" />
-                  <div className="px-7 py-6">
-                    <div className="mb-5">
-                      <h1 className="font-bold">{item.projectTitle}</h1>
-                      <p>{item.description}</p>
-                    </div>
-
-                    <div className="space-y-5 mb-6">
-                      <div className={item.state}>
-                        <span>{item.stateName}</span>
+              <div data-aos="zoom-in">
+                <div
+                  key={item.projectTitle}
+                  className="bg-[var(--bg-card-dark)] border hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] border-zinc-700 rounded-lg h-[] w-[460px]"
+                >
+                  <div className="">
+                    <img src={item.imgPath} className="rounded-t-lg w-full" alt="" />
+                    <div className="px-7 py-6">
+                      <div className="mb-5">
+                        <h1 className="font-bold">{item.projectTitle}</h1>
+                        <p>{item.description}</p>
                       </div>
-                      <ul className="flex gap-3 flex-wrap ">
-                        {item.skills.map((skill, index) => (
-                          <li key={index} className={tools}>
-                            <span>{skill}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="bg-zinc-700 h-[1px] mb-3"></div>
 
-                    <div className="flex justify-between">
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        className="space-x-2 hover:text-cyan-600 transition duration-300"
-                      >
-                        <i className="fa-solid fa-up-right-from-square"></i>
-                        <span className="text-lg font-bold">Live Project</span>
-                      </a>
-                      <a
-                        href={item.github}
-                        className="text-3xl  hover:text-cyan-600 transition duration-300"
-                      >
-                        <i className="fab fa-github"></i>
-                      </a>
+                      <div className="space-y-5 mb-6">
+                        <div className={item.state}>
+                          <span>{item.stateName}</span>
+                        </div>
+                        <ul className="flex gap-3 flex-wrap ">
+                          {item.skills.map((skill, index) => (
+                            <li key={index} className={tools}>
+                              <span>{skill}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="bg-zinc-700 h-[1px] mb-3"></div>
+
+                      <div className="flex justify-between">
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          className="space-x-2 hover:text-cyan-600 transition duration-300"
+                        >
+                          <i className="fa-solid fa-up-right-from-square"></i>
+                          <span className="text-lg font-bold">
+                            Live Project
+                          </span>
+                        </a>
+                        <a
+                          href={item.github}
+                          className="text-3xl  hover:text-cyan-600 transition duration-300"
+                        >
+                          <i className="fab fa-github"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
