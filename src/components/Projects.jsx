@@ -39,7 +39,7 @@ const myProjects = [
     state: checkTools.underDevelop,
     stateName: "Under Develop",
     skills: ["Tailwind CSS 3.3.5", "JavaScript", "CSS 3"],
-    link: "https://ziadmostafa.netlify.app/",
+    link: "https://ziadmostafa01.github.io/educational-platform/",
     github: "",
   },
 ];
