@@ -1,6 +1,7 @@
 import cardImage from "../assets/images/cardImage.png";
 import cardImage2 from "../assets/images/cardImage2.png";
 import cardImage3 from "../assets/images/cardImage3.png";
+import cardImage4 from "../assets/images/cardImage4.png";
 
 const checkTools = {
   completed: "bg-green-500 rounded-full text-center font-semibold w-fit px-3",
@@ -9,6 +10,23 @@ const checkTools = {
 const tools = "bg-zinc-600 text-center rounded-full px-3";
 
 const myProjects = [
+  {
+    imgPath: cardImage4,
+    projectTitle: "Medical Healthcare",
+    description:
+      "A smart healthcare platform developed as a graduation project under the Digital Egypt Pioneers Initiative (DEPI), providing accessible and secure medical services anytime, anywhere.",
+    state: checkTools.underDevelop,
+    stateName: "Under Develop",
+    skills: [
+      "React.js",
+      "Tailwind CSS 4.1",
+      "Bootstrap 5",
+      "JavaScript",
+      "CSS 3",
+    ],
+    link: "https://teamdepi.github.io/mega/",
+    github: "https://github.com/TeamDEPI/mega",
+  },
   {
     imgPath: cardImage3,
     projectTitle: "Taha Fawzi – Personal Portfolio Website",
@@ -36,9 +54,9 @@ const myProjects = [
     projectTitle: "Educational Platform",
     description:
       "A modern, responsive educational platform designed for a seamless learning experience across all devices.",
-    state: checkTools.underDevelop,
-    stateName: "Under Develop",
-    skills: ["Tailwind CSS 3.3.5", "JavaScript", "CSS 3"],
+    state: checkTools.completed,
+    stateName: "Completed",
+    skills: ["React.js", "Tailwind CSS 4.1", "JavaScript", "CSS 3"],
     link: "https://ziadmostafa01.github.io/educational-platform/",
     github: "https://github.com/ZiadMostafa01/educational-platform",
   },
@@ -96,10 +114,10 @@ function Projects() {
             return (
               <div
                 key={item.projectTitle}
-                data-aos="zoom-in"
-                className="bg-[var(--bg-card-dark)] border border-zinc-700 rounded-lg h-[] w-[460px]"
+                // data-aos="zoom-in"
+                className="bg-[var(--bg-card-dark)] border hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] border-zinc-700 rounded-lg h-[] w-[460px]"
               >
-                <div className="hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
+                <div>
                   <img src={item.imgPath} className="rounded-t-lg" alt="" />
                   <div className="px-7 py-6">
                     <div className="mb-5">
