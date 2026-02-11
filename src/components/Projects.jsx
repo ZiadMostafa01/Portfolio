@@ -142,6 +142,7 @@ function Projects() {
                     <div className="flex justify-between">
                       <a
                         href={item.link}
+                        target="_blank"
                         className="space-x-2 hover:text-cyan-600 transition duration-300"
                       >
                         <i className="fa-solid fa-up-right-from-square"></i>
