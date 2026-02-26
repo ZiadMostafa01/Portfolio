@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://work-projects0.github.io/Taha-Portfolio",
+  "homepage": "https://ZiadMostafa01.github.io/Portfolio",
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@tailwindcss/vite": "^4.1.11",
