@@ -2,6 +2,7 @@ import cardImage from "../assets/images/cardImage.png";
 import cardImage2 from "../assets/images/cardImage2.png";
 import cardImage3 from "../assets/images/cardImage3.png";
 import cardImage4 from "../assets/images/cardImage4.png";
+import cardImage5 from "../assets/images/cardImage5.png";
 
 const checkTools = {
   completed: "bg-green-500 rounded-full text-center font-semibold w-fit px-3",
@@ -10,6 +11,22 @@ const checkTools = {
 const tools = "bg-zinc-600 text-center rounded-full px-3";
 
 const myProjects = [
+  {
+    imgPath: cardImage5,
+    projectTitle: "Karas Veterinary Clinic",
+    description:
+      "A modern pet care platform developed for a professional company, streamlining access to veterinary clinics and essential pet services.",
+    state: checkTools.completed,
+    stateName: "Completed",
+    skills: [
+      "React.js",
+      "Tailwind CSS 4.1",
+      "JavaScript",
+      "CSS 3",
+    ],
+    link: "",
+    github: "",
+  },
   {
     imgPath: cardImage4,
     projectTitle: "Medical Healthcare",
