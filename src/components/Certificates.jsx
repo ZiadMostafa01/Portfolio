@@ -10,7 +10,7 @@ import cert7 from "../assets/images/certificates/cert7.jpg";
 import cert8 from "../assets/images/certificates/cert8.png";
 import cert9 from "../assets/images/certificates/cert9.png";
 import cert10 from "../assets/images/certificates/cert10.png";
-
+import cert11 from "../assets/images/certificates/cert11.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
@@ -34,6 +34,7 @@ function Certificates() {
     { src: cert8, title: "Learn HTML & CSS" },
     { src: cert9, title: "Masterign OOP using C++" },
     { src: cert10, title: "English for IT 1" },
+    { src: cert11, title: "Introduction to Dev Arena Front-End" },
   ];
 
   return (
