@@ -3,6 +3,7 @@ import cardImage2 from "../assets/images/cardImage2.png";
 import cardImage3 from "../assets/images/cardImage3.png";
 import cardImage4 from "../assets/images/cardImage4.png";
 import cardImage5 from "../assets/images/cardImage5.png";
+import cardImage6 from "../assets/images/cardImage6.png";
 
 const checkTools = {
   completed: "bg-green-500 rounded-full text-center font-semibold w-fit px-3",
@@ -12,20 +13,27 @@ const tools = "bg-zinc-600 text-center rounded-full px-3";
 
 const myProjects = [
   {
-    imgPath: cardImage5,
+    imgPath: cardImage6,
     projectTitle: "Karas Veterinary Clinic",
     description:
       "A modern pet care platform developed for a professional company, streamlining access to veterinary clinics and essential pet services.",
     state: checkTools.completed,
     stateName: "Completed",
-    skills: [
-      "React.js",
-      "Tailwind CSS 4.1",
-      "JavaScript",
-      "CSS 3",
-    ],
+    skills: ["React.js", "Tailwind CSS 4.1", "JavaScript", "CSS 3"],
     link: "",
     github: "",
+  },
+  {
+    imgPath: cardImage5,
+    projectTitle: "Pawelle Veterinary Clinic",
+
+    description:
+      "A modern pet care platform developed for a professional company, streamlining access to veterinary clinics and essential pet services.",
+    state: checkTools.completed,
+    stateName: "Completed",
+    skills: ["React.js", "Tailwind CSS 4.1", "JavaScript", "CSS 3"],
+    link: "https://ziadmostafa01.github.io/vet-clinic/",
+    github: "https://github.com/ZiadMostafa01/vet-clinic",
   },
   {
     imgPath: cardImage4,
@@ -132,10 +140,14 @@ function Projects() {
               <div data-aos="zoom-in">
                 <div
                   key={item.projectTitle}
-                  className="bg-[var(--bg-card-dark)] border hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] border-zinc-700 rounded-lg h-[] w-[460px]"
+                  className="bg-[var(--bg-card-dark)] border hover:border-cyan-500 transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] border-zinc-700 rounded-lg w-full max-w-[460px]"
                 >
                   <div className="">
-                    <img src={item.imgPath} className="rounded-t-lg w-full" alt="" />
+                    <img
+                      src={item.imgPath}
+                      className="rounded-t-lg w-full"
+                      alt=""
+                    />
                     <div className="px-7 py-6">
                       <div className="mb-5">
                         <h1 className="font-bold">{item.projectTitle}</h1>
